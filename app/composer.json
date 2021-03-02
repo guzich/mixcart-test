@@ -1,0 +1,28 @@
+{
+    "name": "guzich/mixcart-test",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Andrey Guzich",
+            "email": "a.guzich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2-bootstrap4": "^2.0",
+        "yiisoft/yii2-debug": "^2.1",
+        "codeception/codeception": "^4.0",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require-dev": {
+        "codeception/module-yii2": "dev-master",
+        "codeception/module-rest": "dev-master"
+    }
+}
