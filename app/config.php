@@ -23,18 +23,11 @@ $config = [
         ],
         'session' => [
             'class' => 'yii\web\CacheSession'
-        ],
+        ],*/
         'assetManager' => [
-            'appendTimestamp' => true,
-            'bundles' => [
-                'yii\web\JqueryAsset' => false,
-                'yii\bootstrap\BootstrapAsset' => false,
-                'yii\bootstrap4\BootstrapAsset' => false
-            ],
-            'forceCopy' => true
-//'basePath' => '/var/www/cok/docs/assets',
+            'linkAssets' => true,
         ],
-        'errorHandler' => [
+        /*'errorHandler' => [
 //'errorAction' => 'site/error',
             'class' => 'frontend\components\ErrorHandler'
         ],*/

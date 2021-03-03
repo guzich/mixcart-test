@@ -11,9 +11,7 @@
     "require": {
         "yiisoft/yii2-bootstrap4": "^2.0",
         "yiisoft/yii2-debug": "^2.1",
-        "codeception/codeception": "^4.0",
-        "codeception/module-phpbrowser": "^1.0.0",
-        "codeception/module-asserts": "^1.0.0"
+        "ext-json": "*"
     },
     "repositories": [
         {
@@ -23,6 +21,13 @@
     ],
     "require-dev": {
         "codeception/module-yii2": "dev-master",
-        "codeception/module-rest": "dev-master"
+        "codeception/module-rest": "dev-master",
+        "codeception/module-phpbrowser": "dev-master",
+        "codeception/module-asserts": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "."
+        }
     }
 }

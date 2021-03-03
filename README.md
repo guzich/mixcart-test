@@ -1,4 +1,5 @@
-Описание задачи:
+# Тестовое задание на вакансию разработчика PHP
+## Описание задачи:
 
 Разработайте решение на PHP, которое позволит организовать очередь выполнения задач, определяемых сообщениями в очереди. Сообщение должно указывать как реализация будет использована для его обработки. Сообщения могут быть двух типов - асинхронные и последовательные. Асинхронные сообщения выполняются параллельно ограничиваясь параметром максимального кол-ва параллельных обработчиков.
 Задание не подразумевает использование Rabbit MQ или аналогов. Может быть использована СУБД при необходимости.
@@ -14,8 +15,10 @@
     - Web сервера достаточно для асинхронной обработки задач, если на нем реализована нужная функция, например как api метод
 
 ****
-
-docker stop test && docker rm test && docker build -t mixcart-test . && docker run --name test -v $(pwd)/app:/var/www -d -p 80:80 mixcart-test
-
+## INSTALL
+`docker stop test && docker rm test && docker build -t mixcart-test . && docker run --name test -v $(pwd)/app:/var/www -d -p 80:80 mixcart-test`
 // todo перенести в entry point
-docker exec test composer install
+`docker exec test composer install`
+
+## TESTING
+`docker exec test vendor/bin/codecept run`
