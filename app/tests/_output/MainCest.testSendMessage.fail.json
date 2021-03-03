@@ -1,0 +1,8 @@
+object(app\components\AsyncJob)#388 (2) {
+  ["data":"app\components\AsyncJob":private]=>
+  string(10) "1103640321"
+  ["jobsManager":"app\components\AsyncJob":private]=>
+  object(app\components\AsyncJobsManager)#428 (0) {
+  }
+}
+["ok"]
